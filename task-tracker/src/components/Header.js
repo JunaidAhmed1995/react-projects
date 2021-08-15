@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const Header = (props) => {
   return (
     <header>
-      <h1>{props.title}</h1>
+      <h1 style={headingStyle}>{props.title}</h1>
     </header>
   );
 };
@@ -19,6 +19,12 @@ Header.defaultProps = {
 //if we add {title: PropTypes.string.isRequired} then if we don't pass title as prop then shows Error!
 Header.propTypes = {
   title: PropTypes.string,
+};
+
+//used in inline style
+const headingStyle = {
+  color: "red",
+  backgroundColor: "black",
 };
 
 export default Header;
