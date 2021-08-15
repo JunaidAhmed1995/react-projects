@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const Button = (props) => {
   return (
     <button
-      onClick={props.handleClickBtn}
+      onClick={props.handleOnClick}
       style={{ backgroundColor: props.color }}
       className="btn"
     >
@@ -20,7 +20,7 @@ Button.defaultProps = {
 Button.propTypes = {
   text: PropTypes.string,
   color: PropTypes.string,
-  handleClickBtn: PropTypes.func.isRequired,
+  handleOnClick: PropTypes.func.isRequired,
 };
 
 export default Button;
