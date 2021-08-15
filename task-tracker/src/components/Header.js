@@ -16,6 +16,7 @@ Header.defaultProps = {
 
 //To check the type of Prop
 //if we pass title value other than string then it shows Warning!
+//if we add {title: PropTypes.string.isRequired} then if we don't pass title as prop then shows Error!
 Header.propTypes = {
   title: PropTypes.string,
 };
