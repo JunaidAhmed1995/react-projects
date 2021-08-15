@@ -61,8 +61,12 @@ body {
   cursor: pointer;
 }
 
-.task.reminder {
+.task.reminder-active {
   border-left: 5px solid green;
+}
+
+.task.reminder-inactive {
+  border-left: 5px solid #f4f4f4;
 }
 
 .task h3 {
